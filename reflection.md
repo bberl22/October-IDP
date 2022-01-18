@@ -1,0 +1,5 @@
+October IDP Project
+
+ 
+For my October IDP, I wanted to create a simple javascript game that could implement some of the basic components we learned in class in a matching game that I designed with cat images! Thie first thing I did to complete this project was find 6 cat images and resized them to be 100X100px so they could fit in the grid that I designed that had a height of 300 px and a width of 400 px (style.css). In order to display the cards, I used a constant cardArray which I was able to shuffle later using cardArray.sort(() => 0.5 - Math.random()). To ensure that a different image appeared on the board at different grid points I used the let function for (let i = 0; i < cardArray.length; i++) and to check for a match I used   if (cardsChosen[0] === cardsChosen[1]) {alert('You found a match') and then also provided an else statement.
+Overall, I think this project was a great way to solidify my knowledge of some of the components we were taught early on like arrays, loops, functions, and conditionals and I had a lot of fun making this game. 
