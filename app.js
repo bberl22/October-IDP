@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 console.log(cardArray)
 
-  //create your board
+  //creating the board
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
@@ -73,7 +73,7 @@ console.log(cardArray)
       grid.appendChild(card)
     }
   }
-  //check for matches
+  //checking for matches
   function checkForMatch() {
     var cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
@@ -99,12 +99,12 @@ console.log(cardArray)
   }
 
 
-  //flip your card
+  //flips the card
   function flipCard() {
     var cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
     cardsChosenId.push(cardId)
-    //add an image to the square
+    //adds an image to the square
     this.setAttribute('src', cardArray[cardId].img)
     if (cardsChosen.length === 2) {
       setTimeout(checkForMatch, 500)
